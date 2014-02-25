@@ -3,9 +3,9 @@
 def print_menu
 	puts "1. Create a new file, 'hello_from_ruby.txt'"
 	puts "2. Input new data to 'hello_from_ruby.txt'"
-	puts "3. Show contents of 'hello_from_ruby.txt'"
-	puts "4. Save contents of 'hello_from_ruby.txt'"
-	puts "8. Show program code: DEVELOPER ONLY"
+	puts "'show'. Show contents of 'hello_from_ruby.txt'"
+	puts "'save'. Save contents of 'hello_from_ruby.txt'"
+	puts "'introspect'. Show program code: DEVELOPER ONLY"
 	puts "9. Exit"
 end
 
@@ -15,11 +15,11 @@ def process(selection)
 		create_file
 	when "2"
 		input_data
-	when "3"
+	when "show"
 		show_document
-	when "4"
+	when "save"
 		save_document
-	when "8"
+	when "introspect"
 		show_source
 	when "9"
 		exit
